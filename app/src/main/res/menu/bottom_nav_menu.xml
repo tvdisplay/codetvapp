@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/homeicon"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_alltest"
+        android:icon="@drawable/alltesticon"
+        android:title="All Tests" />
+
+    <item
+        android:id="@+id/navigation_results"
+        android:icon="@drawable/resultsicon"
+        android:title="Results" />
+
+    <item
+        android:id="@+id/navigation_tutorrequest"
+        android:icon="@drawable/profileicon"
+        android:title="Tutor Request" />
+
+</menu>

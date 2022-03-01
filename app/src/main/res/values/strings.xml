@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">SIFT</string>
+    <string name="email_address">Email</string>
+    <string name="pass">Password</string>
+    <string name="password">Password</string>
+    <string name="title_activity_bottom_navigaion_acivity">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_tutor">Tutor Request</string>
+    <string name="Open">open</string>
+    <string name="Close">close</string>
+    <string name="preview_title">asd</string>
+    <string name="title_results">Results</string>
+    <string name="title_alltest">All Tests</string>
+    <string name="payment">Payment will be charged to your iTunes account. Your subscription will automatically renew itself unless auto-renewal is turned off atleast 24 hour before the ending of the current period.</string>
+    <string name="access"><u>Access your Apple ID account setting here</u></string>
+    <string name="invitation_text">I am using SIFT app for test preperation</string>
+    <string name="invitation_title">"SIFT "</string>
+    <string name="input_error_email">Email required</string>
+    <string name="input_error_password">Password required</string>
+    <string name="input_length_error_password">Length must greater than 6</string>
+    <string name="input_error_email_invalid">Email not correct</string>
+    <string name="input_error_lname">Lastname requires</string>
+    <string name="input_error_fname">First name required</string>
+    <string name="input_error_mobile">Mobile required</string>
+    <string name="nomatch_password">Conform password not match</string>
+    <string name="nomatchs_password">Password not match</string>
+    <string name="input_error_el">Empty</string>
+</resources>

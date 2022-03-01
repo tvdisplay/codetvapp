@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">12dp</item><!-- text size in menu-->
+        <item name="android:textColor">@color/primary</item>
+        <item name="background">@color/black</item>
+    </style>
+</resources>

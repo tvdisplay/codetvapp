@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+
+        android:background="@color/graybg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="180dp">
+
+            <ImageView
+                android:id="@+id/drawerimageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/logo"
+                android:layout_above="@+id/nametext"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/nametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="SIFT Tutoring"
+                android:textColor="@color/primary"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/emailtext"
+                android:fontFamily="@font/poppins_semi_bold"
+
+
+                />
+            <TextView
+                android:id="@+id/emailtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="sift@gmail.com"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_alignParentBottom="true"
+                android:layout_above="@+id/sifttext"
+                android:textColor="@color/primary"
+                android:layout_marginBottom="5dp"
+                android:layout_centerHorizontal="true"
+
+                />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/homerltv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/logohome"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:layout_marginLeft="20dp"
+                    android:alpha="0.9"
+                    android:src="@drawable/homeicon" />
+                <TextView
+                    android:id="@+id/hometext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@+id/logohome"
+                    android:text="Home"
+                    android:paddingTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppins_medium"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chngpassltv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/logochangepass"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:alpha="0.8"
+                    android:src="@drawable/lockicon" />
+                <TextView
+                    android:id="@+id/changepasstext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+
+                    android:layout_toRightOf="@+id/logochangepass"
+                    android:text="Change Password"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppins_medium"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/subcrltv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/subchome"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/subscribeicon"
+                    android:layout_marginLeft="20dp"
+                    android:alpha="0.8"
+                    />
+                <TextView
+                    android:id="@+id/subctext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@+id/subchome"
+                    android:text="Subscribe Now"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:paddingTop="5dp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppins_medium"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/profilerltv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/logoprofile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:alpha="0.9"
+                    android:src="@drawable/profileicon" />
+                <TextView
+                    android:id="@+id/profiletext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@+id/logoprofile"
+                    android:text="Profile"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppins_medium"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/resultrltv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/logoresul"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/resultsicon"
+                    android:layout_marginLeft="20dp"
+                    android:alpha="0.9"
+                    />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@+id/logoresul"
+                    android:text="Result"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+
+                     android:layout_centerVertical="true"
+                    android:fontFamily="@font/poppins_medium"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_below="@+id/tv_pending_order"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:alpha="0.3"
+                android:background="@color/graytext" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="Communicate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/graytext"
+                android:layout_centerVertical="true"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/sharerltv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/logoshare"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/shareicon"
+                    android:layout_marginLeft="20dp"
+                    android:alpha="0.9"
+                    />
+
+                <TextView
+                    android:id="@+id/sharetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="2dp"
+                    android:layout_toRightOf="@+id/logoshare"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Share"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/aboutusrltv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/logoaboutus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/infoicon"
+                    android:layout_marginLeft="20dp"
+                    android:alpha="0.9"
+                    />
+                <TextView
+                    android:id="@+id/aboutustext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@+id/logoaboutus"
+                    android:text="About Us"
+                    android:paddingTop="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/privacyrltv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/logoprivacy"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/privacyicon"
+                    android:layout_marginLeft="20dp"
+                    android:alpha="0.8"
+                    />
+                <TextView
+                    android:id="@+id/privacytext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@+id/logoprivacy"
+                    android:text="Privacy Policy"
+                    android:layout_marginLeft="20dp"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/termsrltv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/logoterms"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/termsconditionicon"
+                    android:layout_marginLeft="20dp"
+                    android:alpha="0.8"
+                    />
+
+                <TextView
+                    android:id="@+id/hometerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/logoterms"
+                    android:text="Terms &amp; Conditions"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:paddingTop="2dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/logoutrltv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/logologout"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/logouticon"
+                    android:layout_marginLeft="20dp"
+                    />
+                <TextView
+                    android:id="@+id/logouttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@+id/logologout"
+                    android:text="Logout"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

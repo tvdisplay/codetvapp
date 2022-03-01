@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/headingtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:text="heading"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sectionrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headingtext"
+      app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+
+       ></androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

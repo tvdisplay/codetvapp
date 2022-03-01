@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PracticeQuestionNewActivity">
+    <RelativeLayout
+        android:id="@+id/toolbr"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backimg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClick"
+            android:src="@drawable/backicon_yellow"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:id="@+id/titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/backimg"
+            android:text="Practice Test "
+            android:textColor="@color/primary"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/logoimg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/logowhite" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/questionnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/toolbr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="1/30" />
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/questionnumber"
+        android:layout_above="@+id/previousbtn"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <WebView
+                android:id="@+id/storywebview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <WebView
+                android:id="@+id/webview1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storywebview"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp" />
+
+            <RelativeLayout
+                android:id="@+id/rltvlyt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/webview1"
+                android:layout_marginTop="20dp"
+                android:onClick="onClick"
+                tools:ignore="OnClick,WebViewLayout">
+
+
+                <RelativeLayout
+                    android:id="@+id/rltvtxt1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/blackborderbg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="A"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/checkimgrltv1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toRightOf="@+id/rltvtxt1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    >
+                    <ImageView
+                        android:id="@+id/chkfill1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/check_fill"
+                        android:visibility="gone"
+                        />
+                    <ImageView
+                        android:id="@+id/chk1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/check"
+                        />
+                </RelativeLayout>
+
+                <WebView
+                    android:id="@+id/webview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/checkimgrltv1"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltvlyt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rltvlyt1"
+                android:onClick="onClick"
+                android:layout_marginTop="20dp"
+                tools:ignore="OnClick,WebViewLayout">
+
+
+                <RelativeLayout
+                    android:id="@+id/rltvtxt2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/blackborderbg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="B"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/checkimgrltv2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toRightOf="@+id/rltvtxt2"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    >
+                    <ImageView
+                        android:id="@+id/chkfill2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/check_fill"
+                        android:visibility="gone"
+                        />
+                    <ImageView
+                        android:id="@+id/chk2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/check"
+                        />
+                </RelativeLayout>
+                <WebView
+                    android:id="@+id/webview3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/checkimgrltv2"
+
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rltvlyt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rltvlyt2"
+                android:onClick="onClick"
+                android:layout_marginTop="20dp"
+                tools:ignore="OnClick,WebViewLayout">
+
+
+                <RelativeLayout
+                    android:id="@+id/rltvtxt3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/blackborderbg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="C"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/checkimgrltv3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toRightOf="@+id/rltvtxt3"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    >
+                    <ImageView
+                        android:id="@+id/chkfill3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/check_fill"
+                        android:visibility="gone"
+                        />
+                    <ImageView
+                        android:id="@+id/chk3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/check"
+                        />
+                </RelativeLayout>
+
+                <WebView
+                    android:id="@+id/webview4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/checkimgrltv3"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rltvlyt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rltvlyt3"
+                android:onClick="onClick"
+                android:layout_marginTop="20dp"
+                tools:ignore="OnClick,WebViewLayout">
+
+
+                <RelativeLayout
+                    android:id="@+id/rltvtxt4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/blackborderbg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="D"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/checkimgrltv4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+
+                    android:layout_toRightOf="@+id/rltvtxt4"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    >
+                    <ImageView
+
+                        android:id="@+id/chkfill4"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/check_fill"
+                        android:visibility="gone"
+                        />
+                    <ImageView
+                        android:id="@+id/chk4"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/check"
+                        />
+                </RelativeLayout>
+                <WebView
+                    android:id="@+id/webview5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/checkimgrltv4"
+
+                    />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rltvlyt5"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:layout_below="@+id/rltvlyt4"
+                android:layout_marginTop="20dp"
+                tools:ignore="OnClick,WebViewLayout">
+
+
+                <RelativeLayout
+                    android:id="@+id/rltvtxt5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/blackborderbg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="E"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/checkimgrltv5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_toRightOf="@+id/rltvtxt5"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    >
+                    <ImageView
+                        android:id="@+id/chkfill5"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/check_fill"
+                        android:visibility="gone"
+                        />
+                    <ImageView
+                        android:id="@+id/chk5"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/check"
+                        />
+                </RelativeLayout>
+
+                <WebView
+                    android:id="@+id/webview7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/checkimgrltv5"
+                    />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@+id/rltvlyt5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/round_edges_edittext_yellow"
+                android:backgroundTint="@color/primary"
+                android:gravity="center"
+                android:text="Submit and View Answers"
+                android:textAllCaps="false"
+                android:onClick="onClick"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                tools:ignore="OnClick" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/timetextview"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/remainingtv"
+        android:textColor="#FF0000"
+        android:text="Time 00:07/25:00 min"
+        />
+    <TextView
+        android:id="@+id/remainingtv"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/previousbtn"
+        android:layout_toLeftOf="@+id/nextbutton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+
+        android:text=""
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/previousbtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:onClick="onClick"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/grayborder"
+        tools:ignore="OnClick">
+
+        <ImageView
+            android:id="@+id/previmg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/previousblack"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/nextbutton"
+
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:onClick="onClick"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/grayborder"
+        tools:ignore="OnClick">
+
+        <ImageView
+            android:id="@+id/nextimg"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/nextblack" />
+    </RelativeLayout>
+
+</RelativeLayout>

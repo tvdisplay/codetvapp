@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graybg"
+    tools:context=".Activities.ui.home.HomeFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@color/white"
+            android:elevation="5dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginRight="32dp"
+                android:orientation="vertical"
+
+                >
+
+                <RelativeLayout
+                    android:id="@+id/fnamelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_edges_edittext_gray_bg"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/fnameicon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:alpha="0.5"
+                        android:src="@drawable/profileicon"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/etfname"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+
+                        android:layout_marginEnd="20dp"
+                        android:layout_toRightOf="@+id/fnameicon"
+                        android:background="@drawable/round_edges_edittext_gray_bg"
+                        android:gravity="center_vertical"
+                        android:hint="First Name"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/graytext"
+                        android:textColorHint="@color/bordergray"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lnamelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_edges_edittext_gray_bg"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/lnameicon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:alpha="0.5"
+                        android:src="@drawable/profileicon"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/etlname"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_toRightOf="@+id/lnameicon"
+                        android:background="@drawable/round_edges_edittext_gray_bg"
+                        android:gravity="center_vertical"
+                        android:hint="Last Name"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/graytext"
+                        android:textColorHint="@color/bordergray"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/emaillayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_edges_edittext_gray_bg"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/emailicon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:alpha="0.5"
+                        android:src="@drawable/messageicon" />
+
+                    <EditText
+                        android:id="@+id/etemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_toRightOf="@+id/emailicon"
+                        android:background="@drawable/round_edges_edittext_gray_bg"
+                        android:gravity="center_vertical"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/graytext"
+                        android:textColorHint="@color/bordergray"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/phonelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_edges_edittext_gray_bg"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/phoneicon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:alpha="0.5"
+                        android:src="@drawable/phoneicon" />
+
+                    <EditText
+                        android:id="@+id/etphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_toRightOf="@+id/phoneicon"
+                        android:background="@drawable/round_edges_edittext_gray_bg"
+                        android:gravity="center_vertical"
+                        android:hint="Phone"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/graytext"
+                        android:textColorHint="@color/bordergray"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/stateayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_edges_edittext_gray_bg"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/stateicon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:alpha="0.5"
+                        android:src="@drawable/stateicon" />
+
+                    <Spinner
+                        android:id="@+id/spinnerstate"
+                        style="@android:style/Widget.Material.Spinner.Underlined"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_toRightOf="@+id/stateicon"
+                        android:layout_weight="1"
+                        android:background="@color/graybg"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/graytext"
+                        android:textColorHint="@color/bordergray"
+                        android:textSize="18sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/messgaelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/graybgroundedge"
+
+                    android:padding="4dp">
+
+                    <EditText
+                        android:id="@+id/etmessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/graybgroundedge"
+                        android:gravity="top"
+                        android:paddingTop="5dp"
+
+                        android:hint="Message"
+                        android:minHeight="120dp"
+                        android:inputType="textEmailAddress"
+
+                        android:textColor="@color/graytext"
+                        android:textColorHint="@color/bordergray"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+
+                <ProgressBar
+                    android:id="@+id/pbar"
+                    android:visibility="gone"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    />
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/forgetpass"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_edges_edittext_yellow"
+                    android:backgroundTint="@color/primary"
+                    android:gravity="center"
+                    android:text="SUBMIT"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/topone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp"
+            android:background="@color/primary"
+
+            android:elevation="5dp">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/greentick1"
+                android:gravity="center"
+                android:text="1-ON-1 \n Tutor Request"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

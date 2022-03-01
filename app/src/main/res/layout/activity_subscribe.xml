@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SubscribeActivity">
+    <RelativeLayout
+        android:id="@+id/toolbr"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/black"
+        >
+        <ImageView
+            android:id="@+id/backarrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/backicon_yellow"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/backarrow"
+            android:layout_marginLeft="10dp"
+            android:text="Subscribe"
+            android:textColor="@color/primary"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            />
+        <ImageView
+
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/logo"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbr"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="Unlock Full SIFT Access"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            >
+            <ImageView
+                android:id="@+id/greentick1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/greentick"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:text="Exam like questions"
+                android:layout_toRightOf="@+id/greentick1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/graytext"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+            <ImageView
+                android:id="@+id/greentick2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/greentick"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:text="No ads"
+                android:layout_toRightOf="@+id/greentick2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/graytext"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+            <ImageView
+                android:id="@+id/greentick3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/greentick"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:text="Unlimited SIFT Prediction test"
+                android:layout_toRightOf="@+id/greentick3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/graytext"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+            <ImageView
+                android:id="@+id/greentick4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/greentick"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:text="Flashcards"
+                android:layout_toRightOf="@+id/greentick4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/graytext"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/greentick5"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/greentick"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:text="Progress Report"
+                android:layout_toRightOf="@+id/greentick5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/graytext"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/primary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_edges_edittext_yellow"
+            android:gravity="center"
+
+            android:text="Subscribe for $9.99 / month"
+            android:layout_below="@+id/cnfrmpasswordlayout"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="@string/payment"
+            android:layout_toRightOf="@+id/greentick1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/graytext"
+            android:layout_centerVertical="true"
+            />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="Terms of service  and Privacy Policy"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/graytext"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="Restore Purchase"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graybg"
+    tools:context=".Activities.LoginActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/toplyt"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/login_top_bg"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/welcometext"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/logo"
+            />
+        <TextView
+            android:id="@+id/welcometext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Welcome to"
+            android:layout_above="@+id/sifttext"
+            android:textColor="@color/primary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/sifttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="SIFT Tutoring"
+            android:textColor="@color/primary"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toplyt"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/passwordlayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/emaillayout"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/round_edges_edittext_white"
+            android:padding="4dp">
+
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_edges_edittext_white"
+                android:layout_toLeftOf="@+id/eyerltv"
+                android:layout_marginStart="20dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textAlignment="gravity"
+                android:textColor="@color/graytext"
+                android:textColorHint="@color/bordergray"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/eyerltv"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                >
+                <ImageView
+                    android:id="@+id/eyeimage"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/eyeset"
+                    />
+                <ImageView
+                    android:id="@+id/eyeoffimage"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:visibility="gone"
+                    android:src="@drawable/eyeoff"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/emaillayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/round_edges_edittext_white"
+            android:padding="4dp">
+            <EditText
+                android:id="@+id/etemail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/round_edges_edittext_white"
+                android:gravity="center_vertical"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/graytext"
+                android:textColorHint="@color/bordergray"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/forgetpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Forget Password?"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/passwordlayout"
+            android:textColor="@color/graytext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/btnlyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/forgetpass"
+            >
+            <ProgressBar
+                android:id="@+id/pbar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                />
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/primary"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/round_edges_edittext_yellow"
+                android:gravity="center"
+                android:text="LOG IN"
+
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="32dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_below="@+id/btnlyt"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Don&apos;t have an account? "
+                android:textColor="@color/graytext"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Register"
+                android:textColor="@color/primary"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
