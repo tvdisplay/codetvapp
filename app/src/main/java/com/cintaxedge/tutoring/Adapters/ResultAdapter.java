@@ -21,7 +21,8 @@ import com.bumptech.glide.Glide;
 import com.cintaxedge.tutoring.Activities.FlashCardsActivity;
 import com.cintaxedge.tutoring.Activities.LessonDashboardActivity;
 import com.cintaxedge.tutoring.Activities.LessonsActivity;
-import com.cintaxedge.tutoring.Activities.ResultsActivity;
+
+import com.cintaxedge.tutoring.Activities.ResultsNewActivity;
 import com.cintaxedge.tutoring.Models.CategoryItem;
 import com.cintaxedge.tutoring.Models.PredictionResult;
 import com.cintaxedge.tutoring.Models.Result;
@@ -68,29 +69,62 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultAdapter.ViewHolder
 
         final int itemType = getItemViewType(position);
         if (itemType == ITEM_TYPE_pred) {
-            holder.Math.setText(presult.getAfqt_report().getMath_Skills());
-            holder.Comprehension.setText(presult.getAfqt_report().getReading_Comprehension());
-            holder.Mechanical.setText(presult.getAfqt_report().getMechanical_Comprehension());
-            holder.Drawings.setText(presult.getAfqt_report().getSimple_Drawings());
-            holder.Hidden.setText(presult.getAfqt_report().getHidden_Figures());
-            holder.Aviation.setText(presult.getAfqt_report().getArmy_Aviation_Information());
-            holder.Spatial.setText(presult.getAfqt_report().getSpatial_Apperception());
-            holder.siftscore.setText("SIFT Score: "+presult.getAfqt_score());
+            if (presult.getAfqt_report().getMath_Skills() != null) {
+                holder.Math.setText(presult.getAfqt_report().getMath_Skills());
+            }
+            if (presult.getAfqt_report().getReading_Comprehension() != null) {
+                holder.Comprehension.setText(presult.getAfqt_report().getReading_Comprehension());
+            }
+            if (presult.getAfqt_report().getMechanical_Comprehension() != null) {
+                holder.Mechanical.setText(presult.getAfqt_report().getMechanical_Comprehension());
+            }
+            if (presult.getAfqt_report().getSimple_Drawings() != null) {
+                holder.Drawings.setText(presult.getAfqt_report().getSimple_Drawings());
+            }
+            if (presult.getAfqt_report().getHidden_Figures() != null) {
+                holder.Hidden.setText(presult.getAfqt_report().getHidden_Figures());
+            }
+            if (presult.getAfqt_report().getArmy_Aviation_Information() != null) {
+                holder.Aviation.setText(presult.getAfqt_report().getArmy_Aviation_Information());
+            }
+            if (presult.getAfqt_report().getSpatial_Apperception() != null) {
+                holder.Spatial.setText(presult.getAfqt_report().getSpatial_Apperception());
+            }
+            if (presult.getAfqt_score() != null) {
+                holder.siftscore.setText("SIFT Score: " + presult.getAfqt_score());
+            }
         } else {
 
-            holder.catname.setText(result.get(position).getCategory());
-            holder.lessonname.setText(result.get(position).getLesson_name());
-            holder.date.setText(result.get(position).getDate());
-            holder.ttlQ.setText(result.get(position).getTotal_questions());
-            holder.ttlAns.setText(result.get(position).getTotal_questions());
-            holder.ttlCRAns.setText(result.get(position).getCorrect());
-            holder.ttlWrAns.setText(result.get(position).getWrong());
-            holder.scores.setText(result.get(position).getScore());
+            if (result.get(position).getCategory() != null) {
+                holder.catname.setText(result.get(position).getCategory());
+            }
+            if (result.get(position).getLesson_name() != null) {
+                holder.lessonname.setText(result.get(position).getLesson_name());
+            }
+            if (result.get(position).getDate() != null) {
+                holder.date.setText(result.get(position).getDate());
+            }
+            if (result.get(position).getTotal_questions() != null) {
+                holder.ttlQ.setText(result.get(position).getTotal_questions());
+            }
+            if (result.get(position).getTotal_questions() != null) {
+                holder.ttlAns.setText(result.get(position).getTotal_questions());
+            }
+            if (result.get(position).getCorrect() != null) {
+                holder.ttlCRAns.setText(result.get(position).getCorrect());
+            }
+            if (result.get(position).getWrong() != null) {
+                holder.ttlWrAns.setText(result.get(position).getWrong());
+            }
+
+            if (result.get(position).getScore() != null) {
+                holder.scores.setText(result.get(position).getScore());
+            }
 
             holder.submit.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(mContext, ResultsActivity.class);
+                    Intent intent = new Intent(mContext, ResultsNewActivity.class);
                     intent.putExtra("catId", result.get(position).getCat_id());
                     intent.putExtra("lessonId", result.get(position).getLesson_id());
                     mContext.startActivity(intent);
@@ -119,7 +153,7 @@ public class ResultAdapter extends RecyclerView.Adapter<ResultAdapter.ViewHolder
         RelativeLayout parentLayout;
         Button submit;
         TextView catname, lessonname, date, ttlQ, ttlAns, ttlCRAns, ttlWrAns, scores;
-        TextView Math, Comprehension, Mechanical, Drawings, Hidden, Aviation, Spatial,siftscore;
+        TextView Math, Comprehension, Mechanical, Drawings, Hidden, Aviation, Spatial, siftscore;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

@@ -25,4 +25,5 @@
     <string name="nomatch_password">Conform password not match</string>
     <string name="nomatchs_password">Password not match</string>
     <string name="input_error_el">Empty</string>
+    <string name="nomat_password">Password does not match</string>
 </resources>

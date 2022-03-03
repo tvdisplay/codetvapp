@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Tutoring">
-        <activity android:name=".Activities.PracticeQuestionNewActivity"></activity>
+        <activity android:name=".Activities.ResultsNewActivity"></activity>
+        <activity android:name=".Activities.PracticeQuestionNewActivity" />
         <activity android:name=".Activities.FlashCardsActivity" />
         <activity android:name=".Activities.WebviewActivity" />
         <activity android:name=".Activities.PracticeQuestionActivity" />

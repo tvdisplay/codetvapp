@@ -139,7 +139,7 @@ public class RegisterActivity extends AppCompatActivity {
         }
 
         if (!userpass.equals(confirmuserpass)){
-            confirmpasswordet.setError(getString(R.string.nomatchs_password));
+            confirmpasswordet.setError(getString(R.string.nomat_password));
             confirmpasswordet.requestFocus();
             return;
         }

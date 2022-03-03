@@ -100,7 +100,7 @@ public class BottomNavigaionAcivity extends AppCompatActivity {
         resultslyt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(BottomNavigaionAcivity.this, ResultsActivity.class);
+                Intent intent = new Intent(BottomNavigaionAcivity.this, ResultsNewActivity.class);
                 startActivity(intent);
             }
         });

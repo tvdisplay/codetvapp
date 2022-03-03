@@ -588,9 +588,12 @@ public class WebAPI {
 
                         Log.d(TAG, "onResponse: answerresp:" + res);
                         Log.d(TAG, "onResponse:token: " + Prefrences.getAuthToken(context));
+
+
                         SubmitQuestionResponse submitQuestionResponse = new SubmitQuestionResponse();
                         Gson gson = new Gson();
                         submitQuestionResponse = gson.fromJson(res, SubmitQuestionResponse.class);
+
                         if (submitQuestionResponse.getMessage().equals("You have answered this question successfully.")) {
                             callback.accept(true, submitQuestionResponse.getPending_total());
                         } else {
@@ -630,12 +633,17 @@ public class WebAPI {
                     @Override
                     public void onResponse(Call call, final Response response) throws IOException {
                         String res = response.body().string();
-
                         Log.d(TAG, "onResponse: resp:" + res);
-                        RightAnswers rightAnswers = new RightAnswers();
+
                         Gson gson = new Gson();
-                        rightAnswers = gson.fromJson(res, RightAnswers.class);
-                        callback.accept(true, rightAnswers);
+//                        rightAnswers = gson.fromJson(res, RightAnswers.class);
+//                        callback.accept(true, rightAnswers);
+
+                            RightAnswers rightAnswers = new RightAnswers();
+                            rightAnswers = gson.fromJson(res, RightAnswers.class);
+                            callback.accept(true, rightAnswers);
+
+
                     }
                 });
 
@@ -759,15 +767,15 @@ public class WebAPI {
 
     }
 
-    public static void getPredictionResults(Context context ,BiConsumer<Boolean, PredictionResult> callback) {
+    public static void getPredictionResults(Context context, BiConsumer<Boolean, PredictionResult> callback) {
 
         OkHttpClient client = new OkHttpClient().newBuilder()
                 .build();
         MediaType mediaType = MediaType.parse("text/plain");
         RequestBody body = new MultipartBody.Builder().setType(MultipartBody.FORM)
-                .addFormDataPart("action","view-prediction-result")
-                .addFormDataPart("authorizationToken",Prefrences.getAuthToken(context))
-                .addFormDataPart("cat_id","92")
+                .addFormDataPart("action", "view-prediction-result")
+                .addFormDataPart("authorizationToken", Prefrences.getAuthToken(context))
+                .addFormDataPart("cat_id", "92")
                 .build();
         Request request = new Request.Builder()
                 .url("https://officers.asvab-tutoring.com/app-api.php")
@@ -779,8 +787,9 @@ public class WebAPI {
                     @RequiresApi(api = Build.VERSION_CODES.N)
                     @Override
                     public void onFailure(final Call call, IOException e) {
-                       // callback.accept(false, null);
+                        // callback.accept(false, null);
                     }
+
                     @RequiresApi(api = Build.VERSION_CODES.N)
                     @Override
                     public void onResponse(Call call, final Response response) throws IOException {
@@ -790,11 +799,11 @@ public class WebAPI {
                         PredictionResult rslt = new PredictionResult();
                         Gson gson = new Gson();
                         rslt = gson.fromJson(res, PredictionResult.class);
-                        Log.d(TAG, "onResponse: rslt.getAfqtReport().getMath_Skills(); "+rslt.getAfqt_report().getMath_Skills());
-                         callback.accept(true, rslt);
+                        Log.d(TAG, "onResponse: rslt.getAfqtReport().getMath_Skills(); " + rslt.getAfqt_report().getMath_Skills());
+                        callback.accept(true, rslt);
                     }
                 });
 
     }
 
-    }
+}

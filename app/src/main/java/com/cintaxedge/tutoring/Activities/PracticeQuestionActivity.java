@@ -670,7 +670,7 @@ public class PracticeQuestionActivity extends AppCompatActivity implements View.
                         }
                     });
 
-                    Intent intent = new Intent(PracticeQuestionActivity.this, ResultsActivity.class);
+                    Intent intent = new Intent(PracticeQuestionActivity.this, ResultsNewActivity.class);
                     intent.putExtra("catId", lessonobj.getCat_id());
                     intent.putExtra("lessonId", lessonobj.getLesson_id());
                     startActivity(intent);
